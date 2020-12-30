@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  height: 60px;
+  background-color: rgb(250, 250, 250);
+  .selected {
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #333;
+  }
+}
+
+.box {
+  width: 70%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    cursor: pointer;
+  }
+}
+
+.boxleft {
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.boxright {
+  display: inline-flex;
+  justify-content: flex-start;
+  p {
+    margin: 0px 10px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+  }
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  height: 100px;
+  color: #555;
+  background: #fafafa;
+  border-top: 1px solid #f2f2f2;
+  p {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+}
+
+.icon {
+  font-size: 20px;
+  color: rgb(102, 102, 102);
+}
+
+.icon :hover {
+  color: #222;
+}
+
+footer li {
+  margin-top: 20px;
+}
