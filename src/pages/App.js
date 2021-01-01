@@ -3,6 +3,7 @@ import styles from "./App.module.scss";
 import { Link, Route, withRouter } from "react-router-dom";
 import HomePage from "./HomePage/index";
 import ProjectPage from "./ProjectPage/index";
+import ProjectPageDetail from "./ProjectPageDetail/index";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
         <section className={styles.content}>
           <Route path="/" exact component={HomePage} />
           <Route path="/projects" exact component={ProjectPage} />
+          <Route path="/projects/:id" component={ProjectPageDetail} />
         </section>
         <footer className={styles.footer}>
           <ul>

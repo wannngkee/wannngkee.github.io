@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./home.module.scss";
 //import profile from "../../assets/image/profile.jpg";
 import avatar from "../../assets/image/avatar.jpg";
-import Projectlist from "../../components/ProjectList/index";
+import ProjectList from "../../components/ProjectList/index";
+import projectData from "../projects.json";
 
-function HomePage() {
+export default function HomePage() {
   return (
     <div className={styles.wrap}>
       <section className={styles.brief}>
-        <img src={avatar} alt="" />
+        <img src={avatar} alt="profile img" />
         <h1>Ke Wang(王科)</h1>
         <ul>
           <li>Novice Software Engineer</li>
@@ -25,10 +26,8 @@ function HomePage() {
         <div className={styles.title}>
           <h3>A selection of projects</h3>
         </div>
-        <Projectlist />
+        <ProjectList dataSource={projectData.data} />
       </section>
     </div>
   );
 }
-
-export default HomePage;
