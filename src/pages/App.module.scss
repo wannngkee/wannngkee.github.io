@@ -2,6 +2,11 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: auto;
+  .content {
+    flex: 1;
+    text-align: center;
+  }
 }
 
 .header {
@@ -12,39 +17,33 @@
     padding-bottom: 5px;
     border-bottom: 1.5px solid #333;
   }
-}
-
-.box {
-  width: 70%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  div {
-    cursor: pointer;
+  .box {
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      cursor: pointer;
+    }
   }
-}
 
-.boxleft {
-  font-size: 20px;
-  color: rgb(51, 51, 51);
-}
-
-.boxright {
-  display: inline-flex;
-  justify-content: flex-start;
-  p {
-    margin: 0px 10px;
-    font-size: 14px;
-    color: rgb(102, 102, 102);
+  .boxleft {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
   }
-}
 
-.content {
-  flex: 1;
-  text-align: center;
+  .boxright {
+    display: inline-flex;
+    justify-content: flex-start;
+    p {
+      margin: 0px 10px;
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+  }
 }
 
 .footer {
@@ -57,17 +56,22 @@
     font-size: 12px;
     margin-top: -5px;
   }
-}
 
-.icon {
-  font-size: 20px;
-  color: rgb(102, 102, 102);
-}
+  .icon {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+  }
 
-.icon :hover {
-  color: #222;
-}
+  .icon :hover {
+    color: #222;
+  }
 
-footer li {
-  margin-top: 20px;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-top: 20px;
+      padding: 6px 10px;
+    }
+  }
 }

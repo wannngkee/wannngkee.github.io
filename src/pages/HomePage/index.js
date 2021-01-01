@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home.module.scss";
-//import profile from "../../assets/image/profile.jpg";
 import avatar from "../../assets/image/avatar.jpg";
 import ProjectList from "../../components/ProjectList/index";
 import projectData from "../projects.json";

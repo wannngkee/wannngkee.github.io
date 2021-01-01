@@ -9,9 +9,12 @@ export default function ProjectList(props) {
         {props.dataSource.map((item) => (
           <li key={item.id}>
             <Link to={`/projects/${item.id}`}>
-              <div className={styles.cover}>
-                <img src="#" alt="project img" />
-              </div>
+              {/* <div className={styles.cover}>
+                <img
+                  src={require("../../assets/image/tutorget.png")}
+                  alt="project img"
+                />
+              </div> */}
               <div className={styles.brief}>
                 <h3>{item.title}</h3>
                 <p>{item.brief}</p>

@@ -41,7 +41,10 @@ class App extends Component {
         <section className={styles.content}>
           <Route path="/" exact component={HomePage} />
           <Route path="/projects" exact component={ProjectPage} />
-          <Route path="/projects/:id" component={ProjectPageDetail} />
+          <Route
+            path="/projects/:id"
+            component={(props) => <ProjectPageDetail {...props} />}
+          />
         </section>
         <footer className={styles.footer}>
           <ul>
