@@ -1,3 +1,6 @@
+import React from "react";
+import styles from "./projects.module.scss";
+
 export default function ProjectPage() {
-  return <div>Project Page</div>;
+  return <div className={styles.wrap}></div>;
 }

@@ -4,16 +4,16 @@
     "data":[
         {
             "title": "TutorGet",
-            "brief":"An educational web application which allows the registered user to find language tutors and book lessons.",
-            "tags":["ASP.NET","C#","jQuery","Bootstrap","Microsoft SQL Server"],
-            "cover":"assets/images/tutorget.png",
+            "brief":"An educational web application which allows registered users to find language tutors and book lessons.",
+            "tags":["ASP.NET","C#","jQuery","Bootstrap"],
+            "cover":"tutorget.png",
             "id":1
         },
         {
             "title": "Keeper",
-            "brief":"A webpage for keeping notes.",
-            "tags":["react","materialUI"],
-            "cover":"assets/image/tutorget.png",
+            "brief":"A webpage for keeping notes. \n(Udemy The Complete 2020 Web Development Bootcamp).",
+            "tags":["React","React Hooks","materialUI"],
+            "cover":"keeper.png",
             "id":2
         }
     ]

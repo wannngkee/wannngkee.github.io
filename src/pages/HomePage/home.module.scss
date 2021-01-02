@@ -30,8 +30,15 @@
 
 .work {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 25px;
+  .separator {
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 1px solid rgb(242, 242, 242);
+    height: calc(40px);
+  }
   .title {
     h3 {
       font-size: 25px;

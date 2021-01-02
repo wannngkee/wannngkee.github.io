@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home.module.scss";
-import avatar from "../../assets/image/avatar.jpg";
 import ProjectList from "../../components/ProjectList/index";
 import projectData from "../projects.json";
 
@@ -8,7 +7,10 @@ export default function HomePage() {
   return (
     <div className={styles.wrap}>
       <section className={styles.brief}>
-        <img src={avatar} alt="profile img" />
+        <img
+          src={require("../../assets/images/avatar.jpg")}
+          alt="profile img"
+        />
         <h1>Ke Wang(王科)</h1>
         <ul>
           <li>Novice Software Engineer</li>
@@ -22,6 +24,7 @@ export default function HomePage() {
         </p>
       </section>
       <section className={styles.work}>
+        <div className={styles.separator}></div>
         <div className={styles.title}>
           <h3>A selection of projects</h3>
         </div>
