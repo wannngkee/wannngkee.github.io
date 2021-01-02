@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./project.module.scss";
+import styles from "./projectList.module.scss";
 import { Link } from "react-router-dom";
 
 export default function ProjectList(props) {

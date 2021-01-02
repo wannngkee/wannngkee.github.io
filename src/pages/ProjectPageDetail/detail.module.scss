@@ -1,0 +1,27 @@
+.wrap {
+  flex: 1;
+  text-align: initial;
+  .box {
+    width: 60%;
+    margin: 0px auto;
+    padding-top: 45px;
+    .title {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        color: #999;
+        padding-top: 8px;
+        font-size: 13px;
+      }
+    }
+  }
+  .detail {
+    width: 60%;
+    margin: 0px auto;
+    p {
+      padding-top: 10px;
+      line-height: 1.5;
+    }
+  }
+}
