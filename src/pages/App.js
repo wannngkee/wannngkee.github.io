@@ -42,7 +42,7 @@ class App extends Component {
           <Route path="/" exact component={HomePage} />
           <Route path="/projects" exact component={ProjectPage} />
           <Route
-            path="/projects/:id"
+            path="/projects/:title"
             component={(props) => <ProjectPageDetail {...props} />}
           />
         </section>

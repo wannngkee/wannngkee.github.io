@@ -6,15 +6,13 @@
             "title": "TutorGet",
             "brief":"An educational web application which allows registered users to find language tutors and book lessons.",
             "tags":["ASP.NET","C#","jQuery","Bootstrap"],
-            "cover":"tutorget.png",
-            "id":1
+            "cover":"tutorget.png"
         },
         {
             "title": "Keeper",
             "brief":"A webpage for keeping notes. \n(Udemy The Complete 2020 Web Development Bootcamp).",
             "tags":["React","React Hooks","materialUI"],
-            "cover":"keeper.png",
-            "id":2
+            "cover":"keeper.png"
         }
     ]
 }
