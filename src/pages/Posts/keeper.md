@@ -8,6 +8,6 @@ tags: React,React Hooks,materialUI
 
 # Keeper
 
-Nov 2020 to Dec 2020
+Nov 2020 - Dec 2020
 
 This project is part of the Udemy The Complete 2020 Web Development Bootcamp course.
