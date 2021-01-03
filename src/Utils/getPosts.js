@@ -1,7 +1,8 @@
-const path = require("path");
+const dayjs = require("dayjs");
 const fs = require("fs");
+const path = require("path");
 
-const dirPath = path.join(__dirname, "../pages/ProjectPageDetail/Posts");
+const dirPath = path.join(__dirname, "../pages/Posts");
 let postlist = [];
 
 const getPosts = () => {
@@ -42,8 +43,8 @@ const getPosts = () => {
         const metadata = parseMetadata({ lines, metadataIndices });
         const content = parseContent({ lines, metadataIndices });
         post = {
-          id: i + 1,
-          title: metadata.title.toLowerCase(),
+          title: metadata.title,
+          date: metadata.date,
           brief: metadata.brief,
           cover: metadata.cover,
           tags: metadata.tags.split(","),
@@ -52,7 +53,7 @@ const getPosts = () => {
         postlist.push(post);
         if (i === files.length - 1) {
           const sortedList = postlist.sort((a, b) => {
-            return a.id < b.id ? 1 : -1;
+            return dayjs(a.date).isBefore(dayjs(b.date)) ? 1 : -1;
           });
           let data = JSON.stringify(sortedList);
           fs.writeFileSync("src/posts.json", data);

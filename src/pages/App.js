@@ -3,8 +3,9 @@ import styles from "./App.module.scss";
 import { Link, Route, withRouter } from "react-router-dom";
 import HomePage from "./HomePage/index";
 import ProjectPage from "./ProjectPage/index";
-import ProjectPageDetail from "./ProjectPageDetail/index";
+import PostPage from "./PostPage/index";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import NotFound from "../pages/404";
 
 class App extends Component {
   render() {
@@ -43,8 +44,9 @@ class App extends Component {
           <Route path="/projects" exact component={ProjectPage} />
           <Route
             path="/projects/:title"
-            component={(props) => <ProjectPageDetail {...props} />}
+            component={(props) => <PostPage {...props} />}
           />
+          <Route path="/404" exact component={NotFound} />
         </section>
         <footer className={styles.footer}>
           <ul>

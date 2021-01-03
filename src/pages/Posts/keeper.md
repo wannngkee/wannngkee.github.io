@@ -1,6 +1,7 @@
 ---
 title: Keeper
-brief: A webpage for keeping notes.\n(Udemy The Complete 2020 Web Development Bootcamp).
+date: 12/29/2020
+brief: A webpage for keeping notes.(Udemy The Complete 2020 Web Development Bootcamp).
 cover: keeper.png
 tags: React,React Hooks,materialUI
 ---

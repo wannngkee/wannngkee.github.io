@@ -9,10 +9,10 @@ export default function ProjectList() {
       <ul>
         {postlist.map((post) => (
           <li key={post.title}>
-            <Link to={`/projects/${post.title}`}>
+            <Link to={`/projects/${post.title.toLowerCase()}`}>
               <div className={styles.cover}>
                 <img
-                  src={require(`../../assets/images/${post.cover}`)}
+                  src={require(`../../assets/images/${post.cover}`).default}
                   alt="project img"
                 />
               </div>

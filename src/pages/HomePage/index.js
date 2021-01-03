@@ -1,15 +1,13 @@
 import React from "react";
 import styles from "./home.module.scss";
 import ProjectList from "../../components/ProjectList/index";
+import avatar from "../../assets/images/avatar.png";
 
 export default function HomePage() {
   return (
     <div className={styles.wrap}>
       <section className={styles.brief}>
-        <img
-          src={require("../../assets/images/avatar.png")}
-          alt="profile img"
-        />
+        <img src={avatar} alt="profile img" />
         <h1>Ke Wang(王科)</h1>
         <ul>
           <li>Novice Software Engineer</li>
