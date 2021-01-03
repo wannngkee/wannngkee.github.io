@@ -71,7 +71,7 @@ class App extends Component {
               </a>
             </li>
           </ul>
-          <p>Copyright © 2020 Ke Wang</p>
+          <p>© 2020 Ke Wang</p>
         </footer>
       </div>
     );

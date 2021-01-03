@@ -1,26 +1,27 @@
 import React from "react";
 import styles from "./projectList.module.scss";
 import { Link } from "react-router-dom";
+import postlist from "../../posts.json";
 
-export default function ProjectList(props) {
+export default function ProjectList() {
   return (
     <div className={styles.projectlist}>
       <ul>
-        {props.dataSource.map((item) => (
-          <li key={item.id}>
-            <Link to={`/projects/${item.id}`}>
+        {postlist.map((post) => (
+          <li key={post.title}>
+            <Link to={`/projects/${post.title}`}>
               <div className={styles.cover}>
                 <img
-                  src={require(`../../assets/images/${item.cover}`)}
+                  src={require(`../../assets/images/${post.cover}`)}
                   alt="project img"
                 />
               </div>
               <div className={styles.brief}>
-                <h3>{item.title}</h3>
-                <p>{item.brief}</p>
+                <h3>{post.title}</h3>
+                <p>{post.brief}</p>
                 <div className={styles.tag}>
-                  {item.tags &&
-                    item.tags.map((tag, index) => (
+                  {post.tags &&
+                    post.tags.map((tag, index) => (
                       <span key={index}>{tag}</span>
                     ))}
                 </div>
