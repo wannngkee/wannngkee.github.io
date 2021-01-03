@@ -2,7 +2,7 @@
   flex: 1;
   text-align: initial;
   .box {
-    width: 60%;
+    width: 50%;
     margin: 0px auto;
     padding-top: 45px;
     h1 {
@@ -16,6 +16,9 @@
     p {
       padding-top: 10px;
       line-height: 1.5;
+    }
+    iframe {
+      margin-top: 10px;
     }
   }
 }
