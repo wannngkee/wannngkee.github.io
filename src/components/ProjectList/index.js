@@ -17,8 +17,10 @@ export default function ProjectList() {
                 />
               </div>
               <div className={styles.brief}>
-                <h3>{post.title}</h3>
-                <p>{post.brief}</p>
+                <div className={styles.content}>
+                  <h3>{post.title}</h3>
+                  <p>{post.brief}</p>
+                </div>
                 <div className={styles.tag}>
                   {post.tags &&
                     post.tags.map((tag, index) => (

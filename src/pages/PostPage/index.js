@@ -6,7 +6,6 @@ import Markdown from "react-markdown";
 
 export default function PostPage(props) {
   const title = props.match.params.title;
-  console.log(title);
   if (!title) {
     return <Redirect to="/404" />;
   }
