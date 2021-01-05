@@ -16,8 +16,7 @@ export default function HomePage() {
         </ul>
         <p>👋 Hey it's Ke here! I also go by Vicky! </p>
         <p>
-          I am a student at Monash University majoring in Information
-          Technology.
+          I am a student studying Information Technology at Monash University.
         </p>
       </section>
       <section className={styles.work}>
