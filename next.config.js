@@ -5,10 +5,6 @@ module.exports = {
   assetPrefix: isProd
     ? "https://cdn.statically.io/gh/wannngkee/wannngkee.github.io/gh-pages/"
     : "",
-};
-
-module.exports = {
-  assetPrefix: !debug ? "/my-blog" : "",
   webpack: (config) => {
     return {
       ...config,
