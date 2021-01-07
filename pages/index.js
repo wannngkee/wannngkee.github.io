@@ -4,7 +4,6 @@ import styles from "../components/layout.module.scss";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import ProjectList from "../components/projectlist";
-import Link from "next/link";
 
 const name = "Ke Wang(王科)";
 export default function Home({ allPostsData }) {
