@@ -10,9 +10,7 @@ export default function Nav() {
       <div className={styles.box}>
         <Link href="/">
           <a>
-            <div className={styles.boxleft}>
-              <b>My gitBlog</b>
-            </div>
+            <div className={styles.boxleft}>{/* <b>My gitBlog</b> */}</div>
           </a>
         </Link>
         <div className={styles.boxright}>
