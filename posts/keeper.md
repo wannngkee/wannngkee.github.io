@@ -6,7 +6,7 @@ cover: keeper.png
 tags: MERN,materialUI,Auth0
 ---
 
-Nov 2020 - Dec 2020
+Nov 2020 - Feb 2021
 
 This project is part of the Udemy The Complete 2020 Web Development Bootcamp course. As a newbie in web development, watching a bunch of crash courses turned out to bring me many unsolved confusions. Hence, I decided to learn everything from the basics in a more comprehensive way. It is also where I found this course very helpful.From this course, I have equipped myself with the knowledge of MERN stack(Mongo DB, Express JS, React JS, Node JS).
 
