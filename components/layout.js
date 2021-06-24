@@ -5,7 +5,7 @@ import Link from "next/link";
 import Nav from "./nav";
 import Footer from "./footer";
 
-export const siteTitle = "Ke's Portfofilo";
+export const siteTitle = "Ke's Portfolio";
 
 export default function Layout({ children, home, project }) {
   return (
